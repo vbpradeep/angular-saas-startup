@@ -1,0 +1,43 @@
+{
+  "generator-ngx-rocket": {
+    "version": "9.1.0",
+    "props": {
+      "location": "path",
+      "strict": false,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "usePrefix": true,
+      "appName": "angular saas startup",
+      "target": [
+        "web"
+      ],
+      "pwa": true,
+      "ui": "material",
+      "layout": "simple",
+      "auth": false,
+      "lazy": false,
+      "angulartics": false,
+      "languages": [
+        "en-US",
+        "fr-FR"
+      ],
+      "tools": [
+        "prettier",
+        "hads",
+        "compodoc",
+        "jest",
+        "puppeteer"
+      ],
+      "utility": [
+        "lodash",
+        "moment"
+      ],
+      "deploy": "github",
+      "projectName": "angular-saas-startup",
+      "packageManager": "npm",
+      "mobile": [],
+      "desktop": []
+    }
+  }
+}
