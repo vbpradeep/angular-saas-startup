@@ -30,12 +30,12 @@ export class ErrorHandlerInterceptor implements HttpInterceptor {
   }
 
   handleHTTPError(err: any) {
-    let errorMsg: string = (!!err.error && !!err.error.Message ?  err.error.Message : err.statusText);
+    let errorMsg: string = !!err.error && !!err.error.Message ? err.error.Message : err.statusText;
     if (!errorMsg || errorMsg === '' || errorMsg === 'OK') {
       errorMsg = 'Unable to process request';
     }
     if (!environment.production) {
-      errorMsg = err.status + ' '  + errorMsg;
+      errorMsg = err.status + ' ' + errorMsg;
     }
     if (err.status === 400) {
       return;
@@ -63,7 +63,6 @@ export class ErrorHandlerInterceptor implements HttpInterceptor {
       // Server Error
       return throwError(err);
     } else {
-
       return throwError(err);
     }
   }

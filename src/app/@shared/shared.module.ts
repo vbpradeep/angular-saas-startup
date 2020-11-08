@@ -5,8 +5,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '@app/material.module';
 import { LoaderComponent } from './components/loader/loader.component';
 import { DateTimeComponent } from './components/datetime.component/datetime.component';
-import { DateAgoPipe} from './pipes/dateago.pipe';
-import { SafePipe} from './pipes/domSanitizerPipe';
+import { DateAgoPipe } from './pipes/dateago.pipe';
+import { SafePipe } from './pipes/domSanitizerPipe';
 
 @NgModule({
   imports: [FlexLayoutModule, MaterialModule, CommonModule],
